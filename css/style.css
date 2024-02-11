@@ -359,7 +359,7 @@ body {
 .forms {
   width: 568px;
   height: 395px;
-  background-color: rgba(255, 255, 255, 0.603);
+  background-color: white;
   position: absolute;
   top: 2123px;
   display: block;
