@@ -1,0 +1,44 @@
+.about{
+
+  &__background  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    background: url('../img/background_photo.png') no-repeat 50% 50% / 100% 100%;
+  }
+
+  &__image  {
+    margin-top: 80px;
+    width: 458px;
+    height: 352px;
+  }
+
+  &__wrapper  {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    gap: 16px;
+  }
+
+  &__text  {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}

@@ -1,0 +1,78 @@
+.hotels{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__about {
+    padding: 30px 0 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #33333348;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: 30px;
+  }
+
+  &__subtitle {
+    display: flex;
+  }
+
+  &__text {
+    width: 110px;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin-right: 90px;
+  }
+
+  &__icon {
+    display: flex;
+    fill: #81B3D2;
+    gap: 4px;
+  }
+
+  &__rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 28px;
+    margin-top: 50px;
+    background-color: #F2F2F2;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}

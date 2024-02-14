@@ -1,0 +1,78 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background: no-repeat url(../img/background_photo.png) 55% 50%;
+
+  &__blur {
+    backdrop-filter: blur(15px);
+    width: 1200px;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    align-items: center;
+  }
+
+  &__filter {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__checkboxs {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  &__range-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__button {
+    align-self: center;
+  }
+
+  &__submit {
+    background: none;
+    width: 136px;
+    height: 36px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    &:hover{
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+  &__price {
+    width: 318px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #ffffff;
+  }
+
+  &__text {
+    display: flex;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,33 @@
+.info {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    font-family: 'PT Sans';
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #604E43;
+    }
+
+    &:active {
+      background-color: #503E33;
+      color: rgba(255, 255, 255, 0.301);
+    }
+  }
+}

@@ -1,0 +1,77 @@
+button {
+  border: none;
+
+  &.button__sorting {
+    background-color: #ffffff;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-bottom: 0.4px dotted;
+    padding: 0;
+
+    &:hover {
+      color: #5496BD;
+    }
+    &:active {
+      color: #3333339d;
+      border: none;
+    }
+  }
+
+  &.button_info {
+    width: 100px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #81B3D2;
+    margin-right: 3px;
+
+    &:hover{
+      color: #ffffff;
+      background-color: #669EC0;
+    }
+
+    &:active{
+      background-color: #5496BD;
+      color: #ffffff33;
+    }
+  }
+
+  &.button_booking {
+    width: 142px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #766357;
+    margin-left: 3px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #604E43;
+    }
+
+    &:active {
+      background-color: #503E33;
+      color: rgba(255, 255, 255, 0.301);
+    }
+  }
+}
