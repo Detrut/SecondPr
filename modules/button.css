@@ -1,0 +1,97 @@
+.button {
+  background-color: #ffffff;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: none;
+}
+.button--type--submit {
+  background: none;
+  width: 136px;
+  height: 36px;
+  margin-top: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.button--type--submit:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.button--type--booking {
+  width: 142px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #766357;
+  margin-left: 3px;
+}
+.button--type--booking:hover {
+  color: #ffffff;
+  background-color: #604E43;
+}
+.button--type--booking:active {
+  background-color: #503E33;
+  color: rgba(255, 255, 255, 0.301);
+}
+.button--type--info {
+  width: 100px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #81B3D2;
+  margin-right: 3px;
+}
+.button--type--info:hover {
+  color: #ffffff;
+  background-color: #669EC0;
+}
+.button--type--info:active {
+  background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.2);
+}
+.button--type--sorting {
+  border-bottom: 0.4px dotted;
+  padding: 0;
+  color: #000000;
+}
+.button--type--sorting:hover {
+  color: #5496BD;
+}
+.button--type--sorting:active {
+  color: rgba(51, 51, 51, 0.6156862745);
+  border: none;
+}
+.button--type--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  fill: #A9A9A9;
+  height: 40px;
+  width: 38px;
+}
+.button--type--icon:hover {
+  fill: #000000;
+}
+.button--type--icon:active {
+  fill: #81B3D2;
+}
+.button--type--serch {
+  width: 458px;
+  height: 58px;
+  background-color: #81B3D2;
+}
+.button--type--serch:hover {
+  color: #ffffff;
+  background-color: #669EC0;
+}
+.button--type--serch:active {
+  background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.2);
+}

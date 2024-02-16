@@ -1,0 +1,29 @@
+.info {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.info__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.info__button:hover {
+  color: #ffffff;
+  background-color: #604E43;
+}
+.info__button:active {
+  background-color: #503E33;
+  color: rgba(255, 255, 255, 0.301);
+}

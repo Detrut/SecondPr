@@ -1,13 +1,11 @@
-.range[type="range"] {
-  & {
-    -webkit-appearance: none;
-    margin-right: 15px;
-    width: 310px;
-    height: 4px;
-    background: rgba(182, 182, 182, 0.671);
-    border-radius: 5px;
-    background-repeat: no-repeat;
-  }
+.range {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 310px;
+  height: 4px;
+  background: rgba(182, 182, 182, 0.671);
+  border-radius: 5px;
+  background-repeat: no-repeat;
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;

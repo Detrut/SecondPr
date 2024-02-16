@@ -1,41 +1,24 @@
-.form {
+.dialog {
   width: 568px;
   height: 394px;
   position: absolute;
   top: 260px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.form {
   box-shadow: 1px 1px 7px rgba(48, 48, 48, 0.651);
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 40px 0;
-
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 438px;
-    height: 58px;
-    background-color: #81B3D2;
-    color: #ffffff;
-
-    &:hover{
-      color: #ffffff;
-      background-color: #669EC0;
-    }
-
-    &:active{
-      background-color: #5496BD;
-      color: #ffffff33;
-    }
-  }
+  padding: 40px;
 
   &__item {
     display: flex;
     justify-content: center;
+    padding: 12px 0 12px 12px;
+    gap: 16px;
   }
 
   &__label {
@@ -44,20 +27,15 @@
   }
 
   &__text {
-    width: 110px;
     align-items: center;
     font-family: 'PT Sans';
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: left;
     text-transform: uppercase;
     display: inline-flex;
-
-    &_padding-left-30px {
-      padding-left: 30px;
-    }
+    width: 110px;
   }
 
   &__input {
@@ -65,35 +43,30 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: left;
     text-transform: uppercase;
-    width: 300px;
+    width: 338px;
     height: 38px;
     background-color: #F2F2F2;
     border: none;
     padding-left: 16px;
 
     &_width-38px {
-      width: 38px;
+      width: 22px;
     }
   }
+}
 
-  &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F2F2F2;
-    fill: #A9A9A9;
-    height: 38px;
-    width: 38px;
+::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 0.5;
+  background-image: url(../img/icon/calendar.svg);
+  background-size: contain;
+  padding: 0 12px;
+  width: 22px;
+  height: 22px;
+}
 
-    &:hover {
-      fill: #000000;
-    }
-
-    &:active {
-      fill: #81B3D2;
-    }
-  }
+.form__input:hover::-webkit-calendar-picker-indicator {
+  opacity: 1;
 }

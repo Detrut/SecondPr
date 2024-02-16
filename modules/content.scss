@@ -2,21 +2,18 @@
   display: flex;
   flex-direction: column;
 
-  &__info  {
+  &__info {
     display: flex;
     flex-direction: column;
   }
 
-  &__row  {
+  &__row {
     display: flex;
-    flex-direction: row;
-    height: 256px;
   }
 
   &__cards {
     display: flex;
     text-align: center;
-    flex-direction: row;
   }
 
   &__card {
@@ -24,14 +21,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
-    height: 256px;
-    padding: 30px 0;
+    padding: 26px 40px;
 
-    &.is-colored-blue  {
+    &.is-colored-blue {
       background-color: #81B3D2;
       color: #ffffff;
-      padding: 30px;
+      text-align: center;
     }
 
     &.is-colored-brown {
@@ -39,19 +34,30 @@
     }
   }
 
+  &__image {
+    display: flex;
+    flex-grow: 2;
+  }
+
   &__text {
     font-family: 'PT Sans';
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0px;
     text-align: center;
     text-transform: uppercase;
-    width: 292px;
-    margin-bottom: 10px;
   }
 
-  &__icon  {
+  &__icon {
     fill: #81B3D2;
+  }
+
+  &__title {
+    font-family: 'PT Sans';
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 0 80px;
   }
 }

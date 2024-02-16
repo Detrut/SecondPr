@@ -2,48 +2,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 86px;
   width: 100%;
   border-bottom: 1px solid #33333348;
+  padding: 10px 60px;
 
   &__filters {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 20px 0 90px;
-    width: 50%;
+    gap: 20px;
   }
 
-  &__icons{
+  &__icons {
     display: flex;
-    margin-right: 90px;
   }
 
-  &__icon{
+  &__icon {
     padding: 5px;
     fill: #33333398;
   }
 
-  &__icon:hover{
+  &__icon:hover {
     fill: black;
   }
 
-  &__icon:active{
+  &__icon:active {
     fill: #669EC0;
   }
 
-  &__filter{
+  &__filter {
     font-family: 'PT Sans';
     font-size: 14px;
     font-weight: 100;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline dotted;
     color: #333333b0;
 
-    &:hover{
+    &:hover {
       text-decoration: underline dotted;
     }
 
@@ -51,7 +48,6 @@
       color: black;
       text-decoration: none;
     }
-
   }
 
   &__subtitle {
@@ -59,7 +55,6 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0px;
     text-align: center;
     text-transform: uppercase;
   }
