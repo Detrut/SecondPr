@@ -95,3 +95,21 @@
   background-color: #5496BD;
   color: rgba(255, 255, 255, 0.2);
 }
+.button--type--hotels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  font-size: 21px;
+  font-weight: 700;
+}
+.button--type--hotels:hover {
+  color: #ffffff;
+  background-color: #604E43;
+}
+.button--type--hotels:active {
+  background-color: #503E33;
+  color: rgba(255, 255, 255, 0.301);
+}
