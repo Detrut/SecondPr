@@ -1,0 +1,15 @@
+.title {
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.title_text {
+  color: #ffffff;
+  font-weight: 400;
+}
+.title_width {
+  width: 100px;
+}

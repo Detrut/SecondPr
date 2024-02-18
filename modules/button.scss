@@ -1,0 +1,136 @@
+.button {
+  background-color: #ffffff;
+  color: #ffffff;
+  font-family: 'PT Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: none;
+
+  &--type {
+    &--submit {
+      background: none;
+      width: 136px;
+      height: 36px;
+      margin-top: 10px;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+
+    &--booking {
+      width: 142px;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #766357;
+      margin-left: 3px;
+
+      &:hover {
+        color: #ffffff;
+        background-color: #604E43;
+      }
+
+      &:active {
+        background-color: #503E33;
+        color: rgba(255, 255, 255, 0.301);
+      }
+    }
+
+    &--info {
+      width: 100px;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      background-color: #81B3D2;
+      margin-right: 3px;
+
+      &:hover{
+        color: #ffffff;
+        background-color: #669EC0;
+      }
+
+      &:active{
+        background-color: #5496BD;
+        color: #ffffff33;
+      }
+    }
+
+    &--sorting {
+      border-bottom: 0.4px dotted;
+      padding: 0;
+      color: #000000;
+
+      &:hover {
+        color: #5496BD;
+      }
+      &:active {
+        color: #3333339d;
+        border: none;
+      }
+    }
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #F2F2F2;
+      fill: #A9A9A9;
+      height: 40px;
+      width: 38px;
+
+      &:hover {
+        fill: #000000;
+      }
+
+      &:active {
+        fill: #81B3D2;
+      }
+    }
+
+    &--serch {
+      width: 458px;
+      height: 58px;
+      background-color: #81B3D2;
+
+      &:hover {
+        color: #ffffff;
+        background-color: #669EC0;
+      }
+
+      &:active {
+        background-color: #5496BD;
+        color: #ffffff33;
+      }
+    }
+
+    &--hotels {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 568px;
+      height: 86px;
+      background-color: #766357;
+      font-size: 21px;
+      font-weight: 700;
+
+      &:hover {
+        color: #ffffff;
+        background-color: #604E43;
+      }
+
+      &:active {
+        background-color: #503E33;
+        color: rgba(255, 255, 255, 0.301);
+      }
+    }
+  }
+}

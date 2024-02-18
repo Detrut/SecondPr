@@ -1,0 +1,63 @@
+.menu {
+  display: flex;
+  width: 1200px;
+  background: no-repeat url(../img/background_photo.png) 55% 50%;
+
+
+  &__blur {
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+  }
+
+  &__filter {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  &__range-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__button {
+    align-self: center;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #ffffff;
+  }
+
+  &__text {
+    display: flex;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__title {
+    font-family: 'PT Sans';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

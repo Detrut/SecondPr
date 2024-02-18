@@ -1,0 +1,35 @@
+.about__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../img/background_photo.png") no-repeat 50% 50%/100% 100%;
+}
+.about__image {
+  margin-top: 80px;
+  width: 458px;
+  height: 352px;
+}
+.about__wrapper {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  gap: 16px;
+}
+.about__text {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
