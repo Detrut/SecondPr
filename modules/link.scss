@@ -10,6 +10,10 @@
   text-transform: uppercase;
   margin: 0;
 
+  &.is-header {
+    font-size: 14px;
+  }
+
   &.is-active {
     color: #766357;
   }
@@ -41,5 +45,12 @@
       fill: rgba(255, 255, 255, 0.63);
       background-color: #5496BD;
     }
+  }
+
+  &.is-header {
+    font-size: 14px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }

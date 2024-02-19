@@ -2,7 +2,7 @@
   width: 568px;
   height: 394px;
   position: absolute;
-  top: 260px;
+  top: 292px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -17,8 +17,12 @@
   &__item {
     display: flex;
     justify-content: center;
-    padding: 12px 0 12px 12px;
+    padding: 6px 0 8px;
     gap: 16px;
+
+    &.is-button {
+      padding-top: 38px;
+    }
   }
 
   &__label {
@@ -36,6 +40,11 @@
     text-transform: uppercase;
     display: inline-flex;
     width: 110px;
+
+    &.is-moved {
+      padding-left: 34px;
+      width: 64px;
+    }
   }
 
   &__input {
@@ -45,7 +54,7 @@
     line-height: 26px;
     text-align: left;
     text-transform: uppercase;
-    width: 338px;
+    width: 328px;
     height: 38px;
     background-color: #F2F2F2;
     border: none;
@@ -62,7 +71,7 @@
   opacity: 0.5;
   background-image: url(../img/icon/calendar.svg);
   background-size: contain;
-  padding: 0 12px;
+  padding: 0 6px;
   width: 22px;
   height: 22px;
 }

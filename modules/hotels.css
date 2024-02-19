@@ -4,11 +4,11 @@
   flex-direction: column;
 }
 .hotels__about {
-  padding: 30px 20px;
+  padding: 24px 74px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2823529412);
+  box-shadow: 0 1px 0 0px #E5E5E5;
 }
 .hotels__card {
   display: flex;
@@ -23,19 +23,22 @@
 }
 .hotels__subtitle {
   display: flex;
+  padding: 6px 0 0;
 }
 .hotels__text {
-  width: 110px;
+  width: 116px;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
   text-transform: uppercase;
-  margin: 10px 0;
+  padding-bottom: 16px;
+  margin: 0;
 }
 .hotels__buttons {
   display: flex;
+  padding-bottom: 6px;
 }
 .hotels__rating {
   display: flex;
@@ -46,15 +49,16 @@
 .hotels__icon {
   display: flex;
   fill: #81B3D2;
-  gap: 4px;
+  gap: 6px;
+  padding-top: 8px;
 }
 .hotels__rate {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   width: 110px;
   height: 28px;
-  margin-top: 50px;
+  margin-top: 42px;
   background-color: #F2F2F2;
   font-family: "PT Sans";
   font-size: 14px;
@@ -64,5 +68,5 @@
   text-transform: uppercase;
 }
 .hotels__img > img {
-  padding-right: 30px;
+  padding-right: 28px;
 }

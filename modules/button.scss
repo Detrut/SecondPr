@@ -44,7 +44,7 @@
     }
 
     &--info {
-      width: 100px;
+      width: 110px;
       height: 28px;
       display: flex;
       justify-content: center;
@@ -65,16 +65,17 @@
     }
 
     &--sorting {
-      border-bottom: 0.4px dotted;
-      padding: 0;
+      text-decoration: underline dotted;
       color: #000000;
+      font-size: 12px;
 
       &:hover {
+        text-decoration: underline dotted #5496BD;
         color: #5496BD;
       }
       &:active {
         color: #3333339d;
-        border: none;
+        text-decoration: underline dotted transparent;
       }
     }
 

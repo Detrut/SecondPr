@@ -9,12 +9,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 120px;
+  padding: 25px 120px 35px;
 }
 .footer__title {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 8px;
+  padding-left: 4px;
 }
 .footer__subtitle {
   font-family: "PT Sans";
@@ -30,9 +32,12 @@
   justify-content: center;
   align-items: center;
   gap: 4px;
+  padding-top: 12px;
+  padding-right: 12px;
 }
 .footer__text {
-  margin-right: 10px;
+  margin-right: 8px;
+  padding-top: 16px;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: 400;
@@ -40,4 +45,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+.footer__logo {
+  padding-right: 18px;
+  padding-top: 10px;
 }

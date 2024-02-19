@@ -10,6 +10,9 @@
   text-transform: uppercase;
   margin: 0;
 }
+.link.is-header {
+  font-size: 14px;
+}
 .link.is-active {
   color: #766357;
 }
@@ -36,4 +39,10 @@
 .link__icon:active {
   fill: rgba(255, 255, 255, 0.63);
   background-color: #5496BD;
+}
+.link.is-header {
+  font-size: 14px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }

@@ -2,33 +2,31 @@
   display: flex;
   width: 1200px;
   background: no-repeat url(../img/background_photo.png) 55% 50%;
-
+  font-family: 'PT Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
 
   &__blur {
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+    padding: 0px 72px 0 54px;
     width: 100%;
   }
 
   &__filter {
     display: flex;
-    gap: 40px;
-  }
-
-  &__checkboxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
+    padding: 22px 26px 22px 14px;
+    gap: 116px;
   }
 
   &__range-price {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
   }
 
   &__button {
@@ -36,28 +34,39 @@
   }
 
   &__price {
+    width: 314px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     border: 2px solid #ffffff;
   }
 
   &__text {
     display: flex;
-    font-family: 'PT Sans';
     font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
+    margin: 0;
+    width: 50%;
+    justify-content: center;
+  }
+
+  &__legend {
+    padding-bottom: 10px;
+  }
+
+  &__checkboxes {
+    margin: 0;
+    padding: 0;
   }
 
   &__title {
-    font-family: 'PT Sans';
-    font-size: 21px;
+    margin: 0;
+    padding: 22px 0 8px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    text-transform: uppercase;
-    color: #ffffff;
+  }
+
+  &__range {
+    padding: 4px 0 10px;
   }
 }
