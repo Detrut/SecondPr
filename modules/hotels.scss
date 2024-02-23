@@ -1,3 +1,5 @@
+@import "../_variable/extend_mixin.scss";
+
 .hotels {
   width: 100%;
   display: flex;
@@ -30,13 +32,9 @@
   }
 
   &__text {
-    width: 116px;
-    font-family: "PT Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+    @include font_pattern(14px, 400, 21px);
     text-align: left;
-    text-transform: uppercase;
+    width: 116px;
     padding-bottom: 16px;
     margin: 0;
   }
@@ -61,6 +59,7 @@
   }
 
   &__rate {
+    @include font_pattern(14px, 400, 26px);
     display: flex;
     justify-content: center;
     align-items: end;
@@ -68,15 +67,64 @@
     height: 28px;
     margin-top: 42px;
     background-color: #F2F2F2;
-    font-family: 'PT Sans';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
     text-align: left;
-    text-transform: uppercase;
   }
 
   &__img > img {
     padding-right: 28px;
+  }
+
+  @media (min-device-width: 320px) and (max-device-width: 428px) {
+    &__about {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__card {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__img > img {
+      width: 400px;
+      height: 260px;
+    }
+
+    &__subtitle {
+      gap: 26px;
+    }
+
+    &__text {
+      width: 200px;
+    }
+
+    &__rate {
+      font-size: 21px;
+      line-height: 39px;
+      margin: 0;
+      width: 100%;
+      height: 40px;
+    }
+
+    &__rating {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 38%;
+    }
+
+    &__icon {
+      padding: 8px 0;
+
+      & > svg {
+        width: 32px;
+        height: 30px;
+      }
+    }
+
+    &__title > .link {
+      text-align: start;
+    }
   }
 }

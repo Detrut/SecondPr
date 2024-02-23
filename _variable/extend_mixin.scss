@@ -1,0 +1,17 @@
+@mixin font_pattern($fonts, $fontw, $lineh) {
+  font-family: 'PT Sans';
+  font-size: $fonts;
+  font-weight: $fontw;
+  line-height: $lineh;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  @media (min-device-width: 320px) and (max-device-width: 428px) {
+    font-size: $fonts*1.5;
+    line-height: $lineh*1.5;
+  }
+}

@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 60px 0 82px;
+  padding: 56px 0 32px;
   gap: 20px;
 }
 .content__card > h1, .content__card p {
@@ -62,16 +62,74 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
   padding: 0px 50px;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .content__text {
+    font-size: 21px;
+    line-height: 31.5px;
+  }
 }
 .content__icon {
   fill: #81B3D2;
+  width: 75px;
 }
 .content__title {
   font-family: "PT Sans";
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
   padding: 0 80px;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .content__title {
+    font-size: 31.5px;
+    line-height: 39px;
+  }
+}
+.content__box {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .content__row {
+    flex-wrap: wrap;
+  }
+  .content__row img {
+    width: 100%;
+  }
+  .content__cards {
+    flex-direction: column;
+  }
+  .content__card {
+    border-bottom: 1px solid black;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 40px 0;
+  }
+  .content__card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .content__card.is-colored-blue {
+    flex-direction: column;
+  }
+  .content__card svg {
+    width: 120px;
+  }
+  .content__card.is-colored-brown {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content__card.is-colored-brown .content__title {
+    padding: 0 120px;
+  }
+  .content__box {
+    width: 50%;
+  }
 }

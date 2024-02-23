@@ -3,8 +3,15 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
   margin: 0;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .title {
+    font-size: 31.5px;
+    line-height: 39px;
+  }
 }
 .title_text {
   color: #ffffff;

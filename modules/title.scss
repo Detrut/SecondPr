@@ -1,9 +1,7 @@
+@import "../_variable/extend_mixin.scss";
+
 .title {
-  font-family: 'PT Sans';
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
+  @include font_pattern(21px, 700, 26px);
   margin: 0;
 
   &_text {

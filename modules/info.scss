@@ -1,14 +1,10 @@
+@import "../_variable/extend_mixin.scss";
+
 .info {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
-  font-family: 'PT Sans';
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
 
   &__wrapper {
     margin: 0;
@@ -31,14 +27,26 @@
   }
 
   &__title {
+    @include font_pattern(30px, 700, 26px);
     margin: 0;
     padding-top: 56px;
-    font-size: 30px;
   }
 
   &__text {
+    @include font_pattern(14px, 400, 26px);
     color: #333333;
-    font-size: 14px;
     padding-top: 30px;
+  }
+
+  @media (min-device-width: 320px) and (max-device-width: 428px) {
+    width: 100%;
+
+    &__text {
+      font-size: 21px;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
   }
 }

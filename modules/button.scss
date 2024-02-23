@@ -1,12 +1,11 @@
+@import "../_variable/extend_mixin.scss";
+
 .button {
+  @include font_pattern(14px, 400, 21px);
   background-color: #ffffff;
   color: #ffffff;
-  font-family: 'PT Sans';
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
   border: none;
+  -webkit-line-clamp: 1;
 
   &--type {
     &--submit {
@@ -26,9 +25,6 @@
     &--booking {
       width: 142px;
       height: 28px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background-color: #766357;
       margin-left: 3px;
 
@@ -46,12 +42,10 @@
     &--info {
       width: 110px;
       height: 28px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       text-align: left;
       background-color: #81B3D2;
       margin-right: 3px;
+      text-align: center;
 
       &:hover{
         color: #ffffff;
@@ -114,9 +108,6 @@
     }
 
     &--hotels {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 568px;
       height: 86px;
       background-color: #766357;
@@ -132,6 +123,50 @@
         background-color: #503E33;
         color: rgba(255, 255, 255, 0.301);
       }
+    }
+  }
+
+  @media (min-device-width: 320px) and (max-device-width: 428px) {
+    &--type--serch {
+      width: 158px;
+      height: 58px;
+    }
+
+    &--type--hotels {
+      font-size: 30px;
+      width: 100%;
+    }
+
+    &--type--icon {
+      width: 72px;
+      height: 72px;
+
+      & svg {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    &--type--submit {
+      width: 260px;
+      height: 72px;
+      font-size: 32px;
+    }
+
+    &--type--sorting {
+      font-size: 24px;
+    }
+
+    &--type--info {
+      width: 210px;
+      height: 56px;
+      font-size: 26px;
+    }
+
+    &--type--booking {
+      width: 316px;
+      height: 56px;
+      font-size: 26px;
     }
   }
 }

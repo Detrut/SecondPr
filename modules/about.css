@@ -34,3 +34,9 @@
   text-transform: uppercase;
   color: #333333;
 }
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .about__text {
+    font-size: 21px;
+    line-height: 39px;
+  }
+}
