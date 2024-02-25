@@ -5,10 +5,7 @@
   align-items: center;
 }
 .info__wrapper {
-  margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 484px;
   padding-bottom: 42px;
 }
@@ -30,7 +27,7 @@
   text-transform: uppercase;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   margin: 0;
   padding-top: 56px;
@@ -50,7 +47,7 @@
   text-transform: uppercase;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   color: #333333;
   padding-top: 30px;

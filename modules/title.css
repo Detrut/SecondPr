@@ -5,6 +5,10 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   margin: 0;
 }
 @media (min-device-width: 320px) and (max-device-width: 428px) {

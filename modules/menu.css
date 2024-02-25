@@ -1,5 +1,4 @@
 .menu {
-  display: flex;
   width: 1200px;
   background: no-repeat url(../img/background_photo.png) 55% 50%;
   font-family: "PT Sans";
@@ -49,7 +48,6 @@
 .menu__text {
   display: flex;
   font-size: 14px;
-  line-height: 21px;
   margin: 0;
   width: 50%;
   justify-content: center;
@@ -66,7 +64,6 @@
   padding: 22px 0 8px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
 }
 .menu__range {
   padding: 4px 0 10px;

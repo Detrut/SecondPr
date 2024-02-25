@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
 }
-.content__info {
-  display: flex;
-  flex-direction: column;
-}
 .content__row {
   display: flex;
 }
@@ -26,16 +22,12 @@
   margin: 0;
 }
 .content__card.is-colored-blue {
-  display: flex;
   background-color: #81B3D2;
   color: #ffffff;
   text-align: center;
   justify-content: flex-start;
   padding: 42px 40px 26px;
   gap: 22px;
-}
-.content__card.is-colored-blue > .content__title {
-  padding: 0 52px;
 }
 .content__card.is-colored-blue > .content__text {
   padding: 0 8px 0px;
@@ -51,10 +43,6 @@
 .content__card.is-colored-brown > .content__text {
   padding: 0 68px 0px;
 }
-.content__image {
-  display: flex;
-  flex-grow: 2;
-}
 .content__text {
   font-family: "PT Sans";
   font-size: 14px;
@@ -62,7 +50,10 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   padding: 0px 50px;
 }
 @media (min-device-width: 320px) and (max-device-width: 428px) {
@@ -82,7 +73,10 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   padding: 0 80px;
 }
 @media (min-device-width: 320px) and (max-device-width: 428px) {

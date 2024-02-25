@@ -6,19 +6,16 @@
 .hotels__about {
   padding: 24px 74px 18px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   box-shadow: 0 1px 0 0px #E5E5E5;
 }
 .hotels__card {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .hotels__title {
   display: flex;
   flex-direction: column;
-  align-items: start;
   justify-content: space-between;
 }
 .hotels__subtitle {
@@ -32,7 +29,10 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   text-align: left;
   width: 116px;
   padding-bottom: 16px;
@@ -47,11 +47,11 @@
 .hotels__buttons {
   display: flex;
   padding-bottom: 6px;
+  gap: 6px;
 }
 .hotels__rating {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: end;
 }
 .hotels__icon {
@@ -67,7 +67,10 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   display: flex;
   justify-content: center;
   align-items: end;

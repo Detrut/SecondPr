@@ -4,30 +4,25 @@
   &__background {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background: url('../img/background_photo.png') no-repeat 50% 50% / 100% 100%;
   }
 
   &__image {
-    margin-top: 80px;
+    margin: 80px 0 20px;
     width: 458px;
     height: 352px;
-    margin-bottom: 20px;
   }
 
   &__wrapper {
     margin: 42px 0 36px;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   &__title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     width: 500px;
     gap: 30px;
   }

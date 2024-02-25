@@ -4,11 +4,6 @@
   display: flex;
   flex-direction: column;
 
-  &__info {
-    display: flex;
-    flex-direction: column;
-  }
-
   &__row {
     display: flex;
   }
@@ -32,17 +27,12 @@
     }
 
     &.is-colored-blue {
-      display: flex;
       background-color: #81B3D2;
       color: #ffffff;
       text-align: center;
       justify-content: flex-start;
       padding: 42px 40px 26px;
       gap: 22px;
-
-      & > .content__title {
-        padding: 0 52px;
-      }
 
       & > .content__text {
         padding: 0 8px 0px;
@@ -62,11 +52,6 @@
         padding: 0 68px 0px;
       }
     }
-  }
-
-  &__image {
-    display: flex;
-    flex-grow: 2;
   }
 
   &__text {

@@ -8,7 +8,6 @@
   &__about {
     padding: 24px 74px 18px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     box-shadow: 0 1px 0 0px #E5E5E5;
   }
@@ -16,13 +15,11 @@
   &__card {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   &__title {
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: space-between;
   }
 
@@ -42,12 +39,12 @@
   &__buttons {
     display: flex;
     padding-bottom: 6px;
+    gap: 6px;
   }
 
   &__rating {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: end;
   }
 

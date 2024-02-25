@@ -106,4 +106,7 @@
   .header .header__list > .header__item:nth-child(3) {
     display: none;
   }
+  .header.is-header {
+    font-size: 32px;
+  }
 }

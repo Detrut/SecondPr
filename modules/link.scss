@@ -11,7 +11,6 @@
   align-items: center;
   color: black;
   text-decoration: none;
-  margin: 0;
 
   &.is-header {
     font-size: 14px;
@@ -33,9 +32,7 @@
   }
 
   &__icon {
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 48px;
     height: 48px;
     fill: #ffffff;
