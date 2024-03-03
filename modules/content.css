@@ -29,7 +29,7 @@
   padding: 42px 40px 26px;
   gap: 22px;
 }
-.content__card.is-colored-blue > .content__text {
+.content__card.is-colored-blue .content__text {
   padding: 0 8px 0px;
 }
 .content__card.is-colored-brown {
@@ -37,10 +37,10 @@
   gap: 22px;
   padding: 44px 0px 54px;
 }
-.content__card.is-colored-brown > .content__title {
+.content__card.is-colored-brown .content__title {
   padding: 0 124px;
 }
-.content__card.is-colored-brown > .content__text {
+.content__card.is-colored-brown .content__text {
   padding: 0 68px 0px;
 }
 .content__text {

@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <meta http-equiv="Content-type" content="text/html;charset=UFT-8"/>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="./js/increase_decrease.js"></script>
 </head>
   <body class="body">
     <header class="header">
@@ -18,19 +19,19 @@
         </label>
         <ul class="header__list">
           <li class="header__item">
-            <a class="link is-header" href="index.html"><span class="is-overflow">Информация</span></a>
+            <a class="link link--type--header" href="index.html"><span class="is-overflow">Информация</span></a>
           </li>
           <li class="header__item">
-            <a class="link is-header" href="index.html#photo"><span class="is-overflow">Фото и видео</span></a>
+            <a class="link link--type--header" href="index.html#photo"><span class="is-overflow">Фото и видео</span></a>
           </li>
           <li class="header__item">
-            <a class="link is-header" href="index.html"><img class="header__logo" src="img/logo.png" alt="logo.png" height="70"/></a>
+            <a class="link link--type--header" href="index.html"><img class="header__logo" src="img/logo.png" alt="logo.png" height="70"/></a>
           </li>
           <li class="header__item">
-            <a class="link is-header" href="index.html#map"><span class="is-overflow">Карта штата</span></a>
+            <a class="link link--type--header" href="index.html#map"><span class="is-overflow">Карта штата</span></a>
           </li>
           <li class="header__item">
-            <a class="link is-header" href="second_page.html"><span class="is-overflow">Гостиницы</span></a>
+            <a class="link link--type--header" href="second_page.html"><span class="is-overflow">Гостиницы</span></a>
           </li>
         </ul>
       </nav>
@@ -210,21 +211,21 @@
               <div class="form__item">
                 <label for="form__input" class="form__label">
                   <p class="form__text">Взрослые:</p>
-                  <button class="button button--type--icon" type="button">
+                  <button class="button button--type--decrease" type="button">
                     <svg width="15" height="15" viewBox="-4 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M0 13.531h23.688v4.938H0v-4.938z"/></svg>
                   </button>
                   <input type="text" class="form__input form__input_width-38px" value="2"/>
-                  <button class="button button--type--icon" type="button">
+                  <button class="button button--type--increase" type="button">
                     <svg width="15" height="15" viewBox="0 -0.5 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M9 3v2H5.625v3h-2.25V5H0V3h3.375V0h2.25v3z" fill-rule="evenodd"/></svg>
                   </button>
                 </label>
                 <label for="form__input" class="form__label">
                   <p class="form__text is-moved">Дети:</p>
-                  <button class="button button--type--icon" type="button">
+                  <button class="button button--type--decrease" type="button">
                     <svg width="15" height="15" viewBox="-4 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M0 13.531h23.688v4.938H0v-4.938z"/></svg>
                   </button>
                   <input type="text" class="form__input form__input_width-38px" value="0"/>
-                  <button class="button button--type--icon" type="button">
+                  <button class="button button--type--increase" type="button">
                     <svg width="15" height="15" viewBox="0 -0.5 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M9 3v2H5.625v3h-2.25V5H0V3h3.375V0h2.25v3z" fill-rule="evenodd"/></svg>
                   </button>
                 </label>

@@ -34,7 +34,7 @@
       padding: 42px 40px 26px;
       gap: 22px;
 
-      & > .content__text {
+      .content__text {
         padding: 0 8px 0px;
       }
     }
@@ -44,11 +44,11 @@
       gap: 22px;
       padding: 44px 0px 54px;
 
-      & > .content__title {
+      .content__title {
         padding: 0 124px;
       }
 
-      & > .content__text {
+      .content__text {
         padding: 0 68px 0px;
       }
     }
@@ -111,7 +111,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        & .content__title {
+        .content__title {
           padding: 0 120px;
         }
       }

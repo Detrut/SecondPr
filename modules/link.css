@@ -10,7 +10,7 @@
   color: black;
   text-decoration: none;
 }
-.link.is-header {
+.link.link--type--header {
   font-size: 14px;
   font-weight: 400;
 }
@@ -47,14 +47,14 @@
   font-size: 21px;
   font-weight: 700;
 }
-.link.is-header {
+.link.link--type--header {
   font-size: 14px;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 @media (min-device-width: 320px) and (max-device-width: 428px) {
-  .link.is-header {
+  .link.link--type--header {
     font-size: 40px;
   }
   .link__icon {

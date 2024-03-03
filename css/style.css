@@ -167,14 +167,14 @@ fieldset {
   font-size: 12px;
 }
 .button--type--sorting:hover {
-  text-decoration: underline dotted #5496BD;
+  text-decoration-color: #5496BD;
   color: #5496BD;
 }
 .button--type--sorting:active {
   color: rgba(51, 51, 51, 0.6156862745);
-  text-decoration: underline dotted transparent;
+  text-decoration-color: transparent;
 }
-.button--type--icon {
+.button--type--icon, .button--type--increase, .button--type--decrease {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,10 +183,10 @@ fieldset {
   height: 40px;
   width: 38px;
 }
-.button--type--icon:hover {
+.button--type--icon:hover, .button--type--increase:hover, .button--type--decrease:hover {
   fill: #000000;
 }
-.button--type--icon:active {
+.button--type--icon:active, .button--type--increase:active, .button--type--decrease:active {
   fill: #81B3D2;
 }
 .button--type--serch {
@@ -226,11 +226,11 @@ fieldset {
     font-size: 30px;
     width: 100%;
   }
-  .button--type--icon {
+  .button--type--icon, .button--type--increase, .button--type--decrease {
     width: 72px;
     height: 72px;
   }
-  .button--type--icon svg {
+  .button--type--icon svg, .button--type--increase svg, .button--type--decrease svg {
     height: 30px;
     width: 30px;
   }
@@ -338,7 +338,7 @@ fieldset {
   padding: 42px 40px 26px;
   gap: 22px;
 }
-.content__card.is-colored-blue > .content__text {
+.content__card.is-colored-blue .content__text {
   padding: 0 8px 0px;
 }
 .content__card.is-colored-brown {
@@ -346,10 +346,10 @@ fieldset {
   gap: 22px;
   padding: 44px 0px 54px;
 }
-.content__card.is-colored-brown > .content__title {
+.content__card.is-colored-brown .content__title {
   padding: 0 124px;
 }
-.content__card.is-colored-brown > .content__text {
+.content__card.is-colored-brown .content__text {
   padding: 0 68px 0px;
 }
 .content__text {
@@ -594,10 +594,6 @@ fieldset {
   .form__text.is-moved {
     padding: 0;
     width: 50%;
-  }
-  .form .is-button {
-    justify-content: center;
-    padding: 0;
   }
   .form__input {
     height: 70px;
@@ -872,9 +868,6 @@ fieldset {
     width: 32px;
     height: 30px;
   }
-  .hotels__title > .link {
-    text-align: start;
-  }
 }
 
 .info {
@@ -961,7 +954,7 @@ fieldset {
   color: black;
   text-decoration: none;
 }
-.link.is-header {
+.link.link--type--header {
   font-size: 14px;
   font-weight: 400;
 }
@@ -998,14 +991,14 @@ fieldset {
   font-size: 21px;
   font-weight: 700;
 }
-.link.is-header {
+.link.link--type--header {
   font-size: 14px;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 @media (min-device-width: 320px) and (max-device-width: 428px) {
-  .link.is-header {
+  .link.link--type--header {
     font-size: 40px;
   }
   .link__icon {
@@ -1170,6 +1163,7 @@ fieldset {
   display: flex;
   padding: 8px 0 14px 72px;
   gap: 48px;
+  align-items: baseline;
 }
 .sorting__icons {
   display: flex;

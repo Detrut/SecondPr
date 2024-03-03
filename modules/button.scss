@@ -62,16 +62,16 @@
       font-size: 12px;
 
       &:hover {
-        text-decoration: underline dotted #5496BD;
+        text-decoration-color: #5496BD;
         color: #5496BD;
       }
       &:active {
         color: #3333339d;
-        text-decoration: underline dotted transparent;
+        text-decoration-color: transparent;
       }
     }
 
-    &--icon {
+    &--icon, &--increase, &--decrease {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -135,7 +135,7 @@
       width: 100%;
     }
 
-    &--type--icon {
+    &--type--icon, &--type--increase, &--type--decrease {
       width: 72px;
       height: 72px;
 
