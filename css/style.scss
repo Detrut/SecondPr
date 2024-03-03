@@ -4,3 +4,9 @@
 html {
   background-color: #333333;
 }
+
+.is-overflow {
+  @include font_pattern(14px, 700, 26px);
+  -webkit-line-clamp: 1;
+  max-width: 250px;
+}

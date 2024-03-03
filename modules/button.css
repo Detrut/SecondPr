@@ -1,12 +1,24 @@
 .button {
-  background-color: #ffffff;
-  color: #ffffff;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  text-align: center;
   text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  background-color: #ffffff;
+  color: #ffffff;
   border: none;
+  -webkit-line-clamp: 1;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .button {
+    font-size: 21px;
+    line-height: 31.5px;
+  }
 }
 .button--type--submit {
   background: none;
@@ -23,11 +35,7 @@
 .button--type--booking {
   width: 142px;
   height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #766357;
-  margin-left: 3px;
 }
 .button--type--booking:hover {
   color: #ffffff;
@@ -38,14 +46,11 @@
   color: rgba(255, 255, 255, 0.301);
 }
 .button--type--info {
-  width: 100px;
+  width: 110px;
   height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: left;
   background-color: #81B3D2;
-  margin-right: 3px;
+  text-align: center;
 }
 .button--type--info:hover {
   color: #ffffff;
@@ -56,18 +61,19 @@
   color: rgba(255, 255, 255, 0.2);
 }
 .button--type--sorting {
-  border-bottom: 0.4px dotted;
-  padding: 0;
+  text-decoration: underline dotted;
   color: #000000;
+  font-size: 12px;
 }
 .button--type--sorting:hover {
+  text-decoration-color: #5496BD;
   color: #5496BD;
 }
 .button--type--sorting:active {
   color: rgba(51, 51, 51, 0.6156862745);
-  border: none;
+  text-decoration-color: transparent;
 }
-.button--type--icon {
+.button--type--icon, .button--type--increase, .button--type--decrease {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,10 +82,10 @@
   height: 40px;
   width: 38px;
 }
-.button--type--icon:hover {
+.button--type--icon:hover, .button--type--increase:hover, .button--type--decrease:hover {
   fill: #000000;
 }
-.button--type--icon:active {
+.button--type--icon:active, .button--type--increase:active, .button--type--decrease:active {
   fill: #81B3D2;
 }
 .button--type--serch {
@@ -96,9 +102,6 @@
   color: rgba(255, 255, 255, 0.2);
 }
 .button--type--hotels {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 568px;
   height: 86px;
   background-color: #766357;
@@ -112,4 +115,40 @@
 .button--type--hotels:active {
   background-color: #503E33;
   color: rgba(255, 255, 255, 0.301);
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .button--type--serch {
+    width: 158px;
+    height: 58px;
+  }
+  .button--type--hotels {
+    font-size: 30px;
+    width: 100%;
+  }
+  .button--type--icon, .button--type--increase, .button--type--decrease {
+    width: 72px;
+    height: 72px;
+  }
+  .button--type--icon svg, .button--type--increase svg, .button--type--decrease svg {
+    height: 30px;
+    width: 30px;
+  }
+  .button--type--submit {
+    width: 260px;
+    height: 72px;
+    font-size: 32px;
+  }
+  .button--type--sorting {
+    font-size: 24px;
+  }
+  .button--type--info {
+    width: 210px;
+    height: 56px;
+    font-size: 26px;
+  }
+  .button--type--booking {
+    width: 316px;
+    height: 56px;
+    font-size: 26px;
+  }
 }

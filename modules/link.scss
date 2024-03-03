@@ -1,14 +1,21 @@
+@import "../_variable/extend_mixin.scss";
+
 .link {
   display: flex;
-  align-items: center;
-  color: black;
-  text-decoration: none;
   font-family: 'PT Sans';
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 21px;
+  text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+
+  &.link--type--header {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
   &.is-active {
     color: #766357;
@@ -25,9 +32,7 @@
   }
 
   &__icon {
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 48px;
     height: 48px;
     fill: #ffffff;
@@ -40,6 +45,40 @@
     &:active {
       fill: rgba(255, 255, 255, 0.63);
       background-color: #5496BD;
+    }
+
+    &.is-footer {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  &_title {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  &.link--type--header {
+    font-size: 14px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-device-width: 320px) and (max-device-width: 428px) {
+    &.link--type--header {
+      font-size: 40px;
+    }
+
+    &__icon {
+      width: 94px;
+      height: 94px;
+      margin: 12px;
+    }
+
+    &__icon > svg {
+      width: 56px;
+      height: 56px;
     }
   }
 }

@@ -3,20 +3,21 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2823529412);
-  padding: 10px 60px;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0;
 }
 .sorting__filters {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  display: flex;
+  padding: 8px 0 14px 72px;
+  gap: 48px;
+  align-items: baseline;
 }
 .sorting__icons {
   display: flex;
+  padding: 10px 66px 0 0;
 }
 .sorting__icon {
-  padding: 5px;
+  padding: 6px;
   fill: rgba(51, 51, 51, 0.5960784314);
 }
 .sorting__icon:hover {
@@ -30,10 +31,21 @@
   font-size: 14px;
   font-weight: 100;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: left;
   text-decoration: underline dotted;
   color: rgba(51, 51, 51, 0.6901960784);
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .sorting__filter {
+    font-size: 21px;
+    line-height: 39px;
+  }
 }
 .sorting__filter:hover {
   text-decoration: underline dotted;
@@ -44,9 +56,61 @@
 }
 .sorting__subtitle {
   font-family: "PT Sans";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding-right: 12px;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .sorting__subtitle {
+    font-size: 18px;
+    line-height: 31.5px;
+  }
+}
+.sorting__item {
+  display: flex;
+  gap: 22px;
+}
+.sorting__title {
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding-top: 10px;
+  margin: 0;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .sorting__title {
+    font-size: 31.5px;
+    line-height: 39px;
+  }
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .sorting__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .sorting__subtitle {
+    font-size: 26px;
+    line-height: 18px;
+  }
+  .sorting__icons {
+    gap: 16px;
+  }
+  .sorting__icon > svg {
+    width: 24px;
+    height: 24px;
+  }
 }

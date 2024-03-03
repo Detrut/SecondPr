@@ -1,78 +1,123 @@
+@import "../_variable/extend_mixin.scss";
+
 .hotels {
   width: 100%;
   display: flex;
   flex-direction: column;
 
   &__about {
-    padding: 30px 20px;
+    padding: 24px 74px 18px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #33333348;
+    box-shadow: 0 1px 0 0px #E5E5E5;
   }
 
   &__card {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   &__title {
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: space-between;
   }
 
   &__subtitle {
     display: flex;
+    padding: 6px 0 0;
   }
 
   &__text {
-    width: 110px;
-    font-family: 'PT Sans';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+    @include font_pattern(14px, 400, 21px);
     text-align: left;
-    text-transform: uppercase;
-    margin: 10px 0;
+    width: 116px;
+    padding-bottom: 16px;
+    margin: 0;
   }
 
   &__buttons {
     display: flex;
+    padding-bottom: 6px;
+    gap: 6px;
   }
 
   &__rating {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: end;
   }
 
   &__icon {
     display: flex;
     fill: #81B3D2;
-    gap: 4px;
+    gap: 6px;
+    padding-top: 8px;
   }
 
   &__rate {
+    @include font_pattern(14px, 400, 26px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 110px;
     height: 28px;
-    margin-top: 50px;
+    margin-top: 42px;
     background-color: #F2F2F2;
-    font-family: 'PT Sans';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
     text-align: left;
-    text-transform: uppercase;
   }
 
   &__img > img {
-    padding-right: 30px;
+    padding-right: 28px;
+  }
+
+  @media (min-device-width: 320px) and (max-device-width: 428px) {
+    &__about {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__card {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__img > img {
+      width: 400px;
+      height: 260px;
+    }
+
+    &__subtitle {
+      gap: 26px;
+    }
+
+    &__text {
+      width: 200px;
+    }
+
+    &__rate {
+      font-size: 21px;
+      line-height: 39px;
+      margin: 0;
+      width: 100%;
+      height: 40px;
+    }
+
+    &__rating {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 38%;
+    }
+
+    &__icon {
+      padding: 8px 0;
+
+      & > svg {
+        width: 32px;
+        height: 30px;
+      }
+    }
   }
 }

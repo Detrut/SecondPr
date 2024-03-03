@@ -1,54 +1,96 @@
 .menu {
-  display: flex;
   width: 1200px;
   background: no-repeat url(../img/background_photo.png) 55% 50%;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  color: #ffffff;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .menu {
+    font-size: 24px;
+    line-height: 39px;
+  }
 }
 .menu__blur {
   backdrop-filter: blur(15px);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  width: 100%;
+  padding: 0px 72px 0 54px;
 }
 .menu__filter {
   display: flex;
-  gap: 40px;
-}
-.menu__checkboxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
+  padding: 22px 26px 22px 14px;
+  gap: 116px;
 }
 .menu__range-price {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 .menu__button {
   align-self: center;
 }
 .menu__price {
+  width: 314px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   border: 2px solid #ffffff;
 }
 .menu__text {
   display: flex;
-  font-family: "PT Sans";
   font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #ffffff;
+  margin: 0;
+  width: 50%;
+  justify-content: center;
+}
+.menu__legend {
+  padding-bottom: 10px;
+}
+.menu__checkboxes {
+  margin: 0;
+  padding: 0;
 }
 .menu__title {
-  font-family: "PT Sans";
-  font-size: 21px;
+  margin: 0;
+  padding: 22px 0 8px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #ffffff;
+}
+.menu__range {
+  padding: 4px 0 10px;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .menu__blur {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.662745098);
+  }
+  .menu__price {
+    width: 100%;
+    padding: 16px 0;
+  }
+  .menu__range-price {
+    width: 70%;
+  }
+  .menu__legend {
+    font-size: 40px;
+  }
+  .menu__title {
+    font-size: 32px;
+  }
+  .menu__text {
+    font-size: 36px;
+  }
 }

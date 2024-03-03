@@ -8,13 +8,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 30px 120px;
+  padding: 25px 120px 35px;
 }
 .footer__title {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  gap: 8px;
+  padding-left: 4px;
 }
 .footer__subtitle {
   font-family: "PT Sans";
@@ -22,22 +22,35 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  padding: 10px 0;
   text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding: 10px 0;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .footer__subtitle {
+    font-size: 31.5px;
+    line-height: 39px;
+  }
 }
 .footer__icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 4px;
+  padding: 12px 12px 0 0;
 }
 .footer__text {
-  margin-right: 10px;
-  font-family: "PT Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
+  margin-right: 8px;
+  padding-top: 16px;
   color: #000000;
+}
+.footer__logo {
+  padding: 10px 18px 0 0;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

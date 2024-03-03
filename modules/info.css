@@ -4,3 +4,68 @@
   flex-direction: column;
   align-items: center;
 }
+.info__wrapper {
+  display: flex;
+  width: 484px;
+  padding-bottom: 42px;
+}
+.info__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.info__article > p {
+  margin: 0;
+}
+.info__title {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  padding-top: 56px;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .info__title {
+    font-size: 45px;
+    line-height: 39px;
+  }
+}
+.info__text {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #333333;
+  padding-top: 30px;
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .info__text {
+    font-size: 21px;
+    line-height: 39px;
+  }
+}
+@media (min-device-width: 320px) and (max-device-width: 428px) {
+  .info {
+    width: 100%;
+  }
+  .info__text {
+    font-size: 21px;
+  }
+  .info__title {
+    font-size: 45px;
+  }
+}
